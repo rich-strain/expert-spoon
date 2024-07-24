@@ -9,7 +9,7 @@ note.post('/', (req, res) => {
 });
 
 note.delete('/', (req, res) => {
-  res.json(`req.method} request received to delete a note`);
+  res.json(`${req.method} request received to delete a note`);
 });
 
 module.exports = note;
