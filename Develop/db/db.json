@@ -1,6 +1,37 @@
 [
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
+  {
+    "id": 1,
+    "title": "Detail Truck",
+    "text": "Wash and vacuum the truck"
+  },
+  {
+    "id": 2,
+    "title": "Grocery Shopping",
+    "text": "Buy groceries for the week"
+  },
+  {
+    "title": "Laundry",
+    "text": "Wash and fold laundry"
+  },
+  {
+    "title": "Clean House",
+    "text": "Clean the house and take out the trash"
+  },
+  {
+    "title": "Workout",
+    "text": "Go to the gym and workout"
+  },
+  {
+    "title": "Cook Dinner",
+    "text": "Cook dinner for the family"
+  },
+  {
+    "title": "Walk the Dog",
+    "text": "Take the dog for a walk"
+  },
+  {
+    "title": "Clean the Garage",
+    "text": "Organize and clean the garage"
+  },
+  { "title": "Mow the Lawn", "text": "Mow the lawn and water the plants" }
 ]
