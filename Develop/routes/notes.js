@@ -1,4 +1,5 @@
 const notes = require('express').Router();
+const { v4: uuidv4 } = require('uuid');
 
 // require fs module
 const fs = require('fs');
@@ -23,7 +24,21 @@ notes.get('/', (req, res) => {
 });
 
 notes.post('/', (req, res) => {
-  console.log(`Add ${req.body} to note(s)`);
+  // create a new note object from request body
+  let newNote = req.body;
+  // add id key to the newNote object using uuidv4 for a unique id
+  newNote.id = uuidv4();
+
+  // read the current notes from db.json
+  const notes = readAndReturnNotes();
+  // add the new note to the notes array
+  notes.push(newNote);
+
+  // write the updated notes array back to db.json
+  fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(notes, null, 2));
+
+  console.log(`Add ${JSON.stringify(req.body)} to note(s)`);
+
   res.sendStatus(200);
 });
 

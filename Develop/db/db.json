@@ -1,37 +1,12 @@
 [
   {
-    "id": 1,
-    "title": "Detail Truck",
-    "text": "Wash and vacuum the truck"
+    "title": "Code Wars",
+    "text": "Today",
+    "id": "d20eb0f8-b922-436f-8f8b-791ba733e192"
   },
   {
-    "id": 2,
-    "title": "Grocery Shopping",
-    "text": "Buy groceries for the week"
-  },
-  {
-    "title": "Laundry",
-    "text": "Wash and fold laundry"
-  },
-  {
-    "title": "Clean House",
-    "text": "Clean the house and take out the trash"
-  },
-  {
-    "title": "Workout",
-    "text": "Go to the gym and workout"
-  },
-  {
-    "title": "Cook Dinner",
-    "text": "Cook dinner for the family"
-  },
-  {
-    "title": "Walk the Dog",
-    "text": "Take the dog for a walk"
-  },
-  {
-    "title": "Clean the Garage",
-    "text": "Organize and clean the garage"
-  },
-  { "title": "Mow the Lawn", "text": "Mow the lawn and water the plants" }
+    "title": "Schedule Tutoring Session",
+    "text": "Erik on Monday",
+    "id": "30da40f9-6c52-4403-b9cb-1ff84e6d1ed3"
+  }
 ]
