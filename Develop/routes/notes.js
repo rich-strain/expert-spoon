@@ -44,6 +44,14 @@ notes.post('/', (req, res) => {
 
 notes.delete('/:id', (req, res) => {
   console.log(`${JSON.stringify(req.method)} request received to delete a note ID: ${req.params.id}`);
+
+  // delete note by using filter to create a new array of notes that does not include the note with the id to delete
+  // by calling the readAndReturnNotes function in the variable declaration, we shorten the code
+  const notes = readAndReturnNotes().filter((note) => note.id !== req.params.id);
+
+  // write the updated notes array back to db.json
+  fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(notes, null, 2));
+  res.sendStatus(200);
 });
 
 module.exports = notes;
