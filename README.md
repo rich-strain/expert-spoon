@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple task list created with node.js that allows a user to add and delete tasks. The app utilizes express for navigation as well as the backend API and UUID for assigning unique id's to the list items.
+A simple task list created with node and express that allows a user to add and delete tasks. The app utilizes express for navigation as well as the backend API and UUID for assigning unique id's to the list items.
 
 Nodemon was installed to speed up development and was only added to the dev-dependencies.
 
